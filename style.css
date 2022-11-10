@@ -1,0 +1,392 @@
+@font-face {
+    font-family:google sans;
+    src: url(/fonts/ProductSans-Medium.ttf);
+    
+    
+}
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface:regular);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:google sans, sans-serif;
+    user-select: none;
+   -webkit-user-drag: none;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+#main-window{
+    width: 100%;
+    min-height:100vh;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    /* background-image:url(/images/dynamic-landscape/clear-sky-day.jpg); */
+    background: rgb(18, 23, 27);
+   background-size: cover !important;
+   transition: all .3s;
+  
+    
+
+}#temptheme{
+
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    opacity: 1;
+   
+    
+}#info-bar{
+    align-items:flex-end;
+    display: flex;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    font-size: 130px;
+    color: aliceblue;
+    margin:0 0 3% 3%;
+    gap: 5px;
+    z-index: 2;
+    
+    
+    
+    
+    
+}#weather-icon{
+    width:60px;
+    margin-left: 14px;
+    padding-bottom: 11px;
+    transition: all .8s;
+    
+}p{
+    line-height:1;
+    text-shadow:2px 3px 10px rgba(21, 21, 21, 0.222);
+    
+    
+    
+}#temp{
+    font-size:50px;
+    padding-bottom: 5px;
+    padding-bottom: 15px;
+    font-family: inherit;
+    transition: all .4s;
+   
+}#time-el{
+    margin: 0;
+    font-family: inherit;
+ 
+}#notification{
+    background:rgb(247, 103, 103);
+    color: rgb(253, 229, 229);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+position: absolute;
+width: 100%;
+z-index: 10;
+display: none;
+
+
+
+}#notification div{display: inline-block;
+    position: absolute;
+    z-index: 3;
+ right: 10px;
+   width: 25px;
+   height: 25px;
+    background: rgb(255, 255, 255);
+    background: url(/icons/x.png);
+    background-size: contain;
+    transition: background .2s,border-radius .2s;
+    cursor: pointer;
+}#notification div:hover{
+background: rgba(255, 181, 181, 0.819);
+border-radius: 50%;
+}h3{
+    font-weight: 100;
+    display: inline-block;
+}#settings-panel{
+    position:absolute;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+    z-index: 10;
+    right:-400px;
+    transition:right .3s ease-in-out;
+    
+    
+   
+}#sttings{
+    width:100%;
+    height: 100%;
+    border-radius: 1vh;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:20px 6px 0px 6px;
+    overflow: hidden;
+    justify-content: center;
+    
+    
+}#settings-header{
+    font-weight: 600;
+    font-size: 35px;
+    opacity: .81;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgb(22, 72, 222);
+
+}#options-wraper1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3px;
+}.option-desc{
+    font-size: 20px;
+    opacity: .7;
+    font: weight 200;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: royalblue;
+}.wlp-option{
+    width:100px;
+    height: 100px;
+    margin-bottom: 9px;
+    background-color: #3b3b3b15 ;
+    border-radius: 8px;
+    opacity: .6;
+    transition: outline .04s;
+}#wlp-option1{
+    background:url(/icons/frog-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+}#wlp-option2{
+    background:url(/icons/calender-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}#wlp-option3{
+    background:url(/icons/landscape-banner.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}#option-choosen1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}#option-choosen1 p{
+      opacity: .3;
+      font-size: 14px;
+      font-weight: 1;
+}#options-wraper2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3px;
+
+}.font-options{
+    width:100px;
+    height: 100px;
+    margin-bottom: 9px;
+    background-color: #2537dd15 ;
+    color: royalblue;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 42px;
+    opacity: .6;
+    transition: outline .04s;
+
+}#font-option1 p{
+    font-family:google sans;
+}#font-option2 p {
+    font-family: abril Fatface;
+}#font-option3 p{
+    font-family: Sacramento;
+}
+#option-choosen2{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+   
+}#option-choosen2 p{
+    
+   text-align: center;
+      opacity: .3;
+      font-size: 14px;
+      font-weight: 1;
+       
+      
+}#option-choosen2 p:nth-child(1){
+padding-left: 20px;    
+}#option-choosen2 p:nth-child(2){padding-left: 17px;}.f{
+
+}#options-wraper3{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3px;
+}.ambiant-options{
+    width:100px;
+    height: 100px;
+    margin-bottom: 9px;
+    background-color: #2537dd15 ;
+    color: royalblue;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 42px;
+    opacity: .6;
+    transition: outline .04s;
+}#ambiant-option1{
+background-image: url(/icons/window-rain.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position:-20px 0px;
+}#ambiant-option2{
+    background-image: url(/icons/ocean-waves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}#ambiant-option3{
+    background-image: url(/icons/fireplace.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}#option-choosen3{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: .3;
+    font-size: 14px;
+    font-weight: 1;
+    
+}#option-choosen3 p:nth-child(1){
+    padding-left: 5px;    
+    }#option-choosen3 p:nth-child(2){padding-right: 20px;
+        padding-left: 5px;
+    }#option-choosen3 p:nth-child(3){padding-right: 12px;
+
+ }#youtube-ambiant{
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    
+ }
+ 
+ 
+ iframe{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2);
+    
+    
+ }
+
+
+
+
+
+
+
+
+#clock-mode{
+    font-size: 20px;
+    padding: 12px;
+    margin:15px auto 0 auto;
+    border: rgb(155, 179, 249) 2px solid;
+    border-radius: 4px;
+    color: royalblue;
+    background:aliceblue;
+transition:border .1s, background .3s,color.3s;
+}#clock-mode:hover{
+     background-color: royalblue;
+     color: aliceblue;
+     border:2px solid transparent;
+}#clock-mdoe:active,#clock-mode:focus{
+    border: none;
+    outline: none;
+}
+
+
+
+
+.info-toggle{
+    align-items:flex-end;
+    display: flex;
+    position: static;
+    justify-self: center;
+    left: 0;
+    font-size: 200px;
+    color: aliceblue;
+    margin:0 0 3% 3%;
+    gap: 0px;
+    z-index: 2;
+    
+}.main-toggle{
+    width: 100%;
+    min-height:100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+    /* background-image:url(/images/dynamic-landscape/clear-sky-day.jpg); */
+    background: rgb(18, 23, 27);
+   background-size: cover !important;
+   transition: all .3s;
+  
+    
+}
+
+
+
+
+
+
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+   
+    100%{
+        opacity:1;
+    }
+}
+
+/* and (min-height:900px)  */
+
+@media screen and (min-width:0px) {
+    #settings-panel{
+       
+    }
+
+
+
+}
+@media screen and (max-height:660px) {
+    iframe{
+          transform: scale(2);
+         
+    }#settings-header{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1280px) {
+    iframe{
+          transform: scale(2);
+         
+    }#settings-header{
+        display: none;
+    }
+    
+}
