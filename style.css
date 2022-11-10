@@ -1,5 +1,5 @@
 @font-face {
-    font-family:google sans;
+    font-family:google;
     src: url(fonts/ProductSans-Medium.ttf);
     
     
@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:cursive, sans-serif;
+    font-family:google, sans-serif;
     user-select: none;
    -webkit-user-drag: none;
 }
