@@ -160,13 +160,13 @@ border-radius: 50%;
     opacity: .6;
     transition: outline .04s;
 }#wlp-option1{
-    background:url(/icons/frog-banner.jpg);
+    background:url(icons/frog-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
    
 }#wlp-option2{
-    background:url('/icons/calender-banner.jpg');
+    background:url(/icons/calender-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
