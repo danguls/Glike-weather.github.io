@@ -225,9 +225,9 @@ border-radius: 50%;
       
 }#option-choosen2 p:nth-child(1){
 padding-left: 20px;    
-}#option-choosen2 p:nth-child(2){padding-left: 17px;}.f{
+}#option-choosen2 p:nth-child(2){padding-left: 17px;}
 
-}#options-wraper3{
+#options-wraper3{
     display: flex;
     justify-content: space-evenly;
     gap: 3px;
