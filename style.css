@@ -349,7 +349,7 @@ transition:border .1s, background .3s,color.3s;
 position:absolute;
 width: 150px;
 height: 150px;
-background: salmon;
+background: transparent;
 z-index: 200;
 }
 
