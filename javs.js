@@ -606,6 +606,10 @@ function listeners(){
     let clockBtn = document.getElementById('clock-mode')
     let infoBar  = document.getElementById('info-bar')
     let mainWindwo = document.getElementById('main-window')
+    let touchBox = document.getElementById('touch-box')
+
+    
+    
 
 
 function clockMode() {
@@ -725,6 +729,28 @@ function clockMode() {
        })
      }
 
+function fullScreenTouch(){
+    touchBox.addEventListener('touchstart',e=>{
+
+        if (clickables[3].fsToggle == false) {
+            document.documentElement.requestFullscreen().catch(e=>{
+                showEr(e)
+               })
+               clickables[3].fsToggle = true
+               
+               return;
+   
+   
+        }else if(clickables[3].fsToggle = true){
+             document.exitFullscreen()
+             clickables[3].fsToggle=false
+        }
+        localStorage.setItem('locals',JSON.stringify(clickables))
+
+                
+       })
+}
+
 function toggleSettings() {
     
     document.addEventListener('keypress',e=>{
@@ -752,6 +778,7 @@ function toggleSettings() {
        //ui events
         toggleSettings()
         toggleFullScreen()
+        fullScreenTouch()
         clockMode()
         toImperial()
  
