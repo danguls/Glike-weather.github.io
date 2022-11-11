@@ -536,7 +536,7 @@ function changeTheme(){
 
   function setTmpImg(themeDir,tmpimg) {
       
-      temptheme.style.background=`url(/images/${themeDir}/${tmpimg})`
+      temptheme.style.background=`url(images/${themeDir}/${tmpimg})`
       temptheme.style.animation = 'fadein 3.5s ease-in-out'
       
   }
@@ -546,7 +546,7 @@ function changeTheme(){
 function tempThemeDis(mainThemeDir,mainThemeImage) {
     
     temptheme.style.display = 'none'
-    mainWindow.style.background = `url(/images/${mainThemeDir}/${mainThemeImage})`
+    mainWindow.style.background = `url(images/${mainThemeDir}/${mainThemeImage})`
     mainWindow.style.backgroundSize= 'cover'
     mainWindow.style.backgroundRepeat= 'no-repeat'
     
