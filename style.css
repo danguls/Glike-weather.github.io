@@ -23,7 +23,7 @@ body{
     position: relative;
     z-index: 100;
     overflow: hidden;
-    /* background-image:url(/images/dynamic-landscape/clear-sky-day.jpg); */
+    /* background-image:url(images/dynamic-landscape/clear-sky-day.jpg); */
     background: rgb(18, 23, 27);
    background-size: cover !important;
    transition: all .3s;
@@ -38,7 +38,7 @@ body{
     background-size: cover !important;
     opacity: 1;
    
-    
+   
 }#info-bar{
     align-items:flex-end;
     display: flex;
@@ -166,13 +166,13 @@ border-radius: 50%;
 
    
 }#wlp-option2{
-    background:url(/icons/calender-banner.jpg);
+    background:url(icons/calender-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
 
 }#wlp-option3{
-    background:url(/icons/landscape-banner.jpg);
+    background:url(icons/landscape-banner.jpg);
     background-size: cover;
     
     background-repeat: no-repeat;
@@ -245,16 +245,16 @@ padding-left: 20px;
     opacity: .6;
     transition: outline .04s;
 }#ambiant-option1{
-background-image: url(/icons/window-rain.jpg);
+background-image: url(icons/window-rain.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position:-20px 0px;
 }#ambiant-option2{
-    background-image: url(/icons/ocean-waves.jpg);
+    background-image: url(icons/ocean-waves.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }#ambiant-option3{
-    background-image: url(/icons/fireplace.jpg);
+    background-image: url(icons/fireplace.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }#option-choosen3{
@@ -339,7 +339,7 @@ transition:border .1s, background .3s,color.3s;
     align-items: center;
     z-index: 100;
     overflow: hidden;
-    /* background-image:url(/images/dynamic-landscape/clear-sky-day.jpg); */
+    /* background-image:url(images/dynamic-landscape/clear-sky-day.jpg); */
     background: rgb(18, 23, 27);
    background-size: cover !important;
    transition: all .3s;
