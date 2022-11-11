@@ -10,8 +10,7 @@ therefore dont cringe at the code lol🙃
 
 ### how to use
 
-##### 1. you can go full screen by pressing 'f' on the keyboard or tapping the upper most left corner of the screen if you are using
-a touch interface
+##### 1. you can go full screen by pressing 'f' on the keyboard or tapping the upper most left corner of the screen if you are using a touch interface
 
 ##### 2. you can open the options menu by pressing 'o'
 
