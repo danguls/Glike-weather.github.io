@@ -6,14 +6,13 @@ let key = '364201d93ffdeeb2e358a03c7d109475'
 let theme =  [{clearSkyDay:'clear-sky-day.jpg',clearSkyNight:'clear-sky-night.jpg',fewCloudsDay:'few-clouds-day.jpg',fewCloudsNight:'few-clouds-night.jpg',mistDay:'mist-day.jpg',mistNight:'mist-night.jpg',rainDay:'rain-day.jpg',rainNight:'rain-night.jpg',scatterdCloudsDay:'scattered-clouds-day.jpg',scatterdCloudsNight:'scattered-clouds-night.jpg',showerRainDay:'shower-rain-day.jpg',showerRainNight:"shower-rain-night.jpg",snowDay:'snow-day.jpg',snowNight:"snow-night.jpg",thunderstormDay:'thunderstorm-day.jpg',thunderstormNight:'thunderstrom-night.jpg'},{tentytwototwmtytree:'22to25.jpg'}]
 let imperial = false
 
-let clickables = [{googlefrog:null,googleCalendar:null,landscape:true,ambiant1:null,ambiant2:null,ambiant3:null},{font1:true,font2:null,font3:null},{clockMode:false},{fsToggle:false,stt:false}]
+let clickables = [{googlefrog:null,googleCalendar:null,landscape:true,ambiant1:null,ambiant2:null,ambiant3:null},{font1:true,font2:null,font3:null},{clockMode:false},{fsToggle:null,stt:false}]
 
 if (localStorage.length>0) {
     clickables = JSON.parse(localStorage.getItem('locals'))
 }else{
     
 }
-localStorage.clear()
 
 
 
@@ -706,6 +705,28 @@ function clockMode() {
 
    } 
     
+   //FIXME:
+   function toImperialTouch () {
+    temp.addEventListener('touchstart',()=>{
+     if (imperial === false) {
+         imperial = true
+         weatherComp()
+         
+         return;
+     }else if(imperial ===true){
+        imperial = false
+        weatherComp()
+ 
+        return;
+     }
+    
+ })
+ 
+ 
+ 
+ 
+ 
+    } 
     
  function toggleFullScreen() {
     document.addEventListener('keypress',e=>{
@@ -729,7 +750,9 @@ function clockMode() {
        })
      }
 
+   //FIXME:
 function fullScreenTouch(){
+    console.log(clickables[3].fsToggle);
     touchBox.addEventListener('touchstart',e=>{
 
         if (clickables[3].fsToggle == false) {
@@ -745,12 +768,16 @@ function fullScreenTouch(){
              document.exitFullscreen()
              clickables[3].fsToggle=false
         }
-        localStorage.setItem('locals',JSON.stringify(clickables))
 
                 
        })
+
+       localStorage.setItem('locals',JSON.stringify(clickables))
+
+       
 }
 
+  //FIXME: add support to mobile
 function toggleSettings() {
     
     document.addEventListener('keypress',e=>{
@@ -781,6 +808,7 @@ function toggleSettings() {
         fullScreenTouch()
         clockMode()
         toImperial()
+        toImperialTouch()
  
 //event listenmers for the themes and ambiants
     wlpOption1.addEventListener('click',()=>{wlpOption1.style.cssText = `outline: 2px royalblue solid;
