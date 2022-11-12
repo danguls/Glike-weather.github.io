@@ -4,7 +4,7 @@
 
 ## about this project
 #### i am a newbie web programmer and i made this web app as i learn js with alot of help from youtube and other sources
-therefore dont cringe at the code lol🙃
+therefore dont cring at the code lol🙃
 
 ## how to use
 
