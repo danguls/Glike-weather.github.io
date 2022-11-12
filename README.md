@@ -29,4 +29,8 @@ therefore dont cring at the code lol🙃
 #### you can change the wallpaper or the themes by adding you desired images to the folder and just make sure 
 they take the name of the image they are supposed to repplace
 
+## things that the site dont have yet 
+1. toggling the option menu without the keyboard
+2. support for 12 hour clock
+3. support for full screen on ipad
 
