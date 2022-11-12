@@ -1,6 +1,6 @@
 # Glike-weather.github.io
 
-####a simple weather app looks like the nest hub screen saver. and can be used as a screen saver
+#### a simple weather app looks like the nest hub screen saver. and can be used as a screen saver
 also i added some ambiant videos from youtube with sound, you can open it on your monitor/tablets etc..
 works mosly for big screens and most of the themes look best on 16:9 aspect ratio. the site is still in the work and some some features
 
