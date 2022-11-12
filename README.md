@@ -8,7 +8,7 @@ therefore dont cring at the code lol🙃
 
 ## how to use
 
-#### 1. click on the website link in my repository or download the code and open it on your desktop 
+#### 1. click on the website link [here](https://danguls.github.io/Glike-weather.github.io/) or download the code and open it on your desktop 
 
 #### 2. you can go full screen by pressing 'f' on the keyboard or tapping the upper most left corner of the screen if you are using a touch interface
 
