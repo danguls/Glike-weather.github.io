@@ -7,12 +7,13 @@ let theme =  [{clearSkyDay:'clear-sky-day.jpg',clearSkyNight:'clear-sky-night.jp
 let imperial = false
 
 let clickables = [{googlefrog:null,googleCalendar:null,landscape:true,ambiant1:null,ambiant2:null,ambiant3:null},{font1:true,font2:null,font3:null},{clockMode:false},{fsToggle:null,stt:false}]
-
+localStorage.clear()
 if (localStorage.length>0) {
     clickables = JSON.parse(localStorage.getItem('locals'))
 }else{
-    
+ welcome()
 }
+
 
 
 
@@ -705,7 +706,7 @@ function clockMode() {
 
    } 
     
-   //FIXME:
+   
    function toImperialTouch () {
     temp.addEventListener('touchstart',()=>{
      if (imperial === false) {
@@ -750,22 +751,21 @@ function clockMode() {
        })
      }
 
-   //FIXME:
-function fullScreenTouch(){
+   
+function settingsTouch(){
     console.log(clickables[3].fsToggle);
     touchBox.addEventListener('touchstart',e=>{
 
         if (clickables[3].fsToggle == false) {
-            document.documentElement.requestFullscreen().catch(e=>{
-                showEr(e)
-               })
+             settings.style.right =  '0px'
                clickables[3].fsToggle = true
                
                return;
    
    
         }else if(clickables[3].fsToggle = true){
-             document.exitFullscreen()
+            settings.style.right =  '-400px'
+
              clickables[3].fsToggle=false
         }
 
@@ -777,7 +777,7 @@ function fullScreenTouch(){
        
 }
 
-  //FIXME: add support to mobile
+  
 function toggleSettings() {
     
     document.addEventListener('keypress',e=>{
@@ -805,7 +805,7 @@ function toggleSettings() {
        //ui events
         toggleSettings()
         toggleFullScreen()
-        fullScreenTouch()
+        settingsTouch()
         clockMode()
         toImperial()
         toImperialTouch()
@@ -1017,3 +1017,24 @@ opacity: .6;`
 
 
 }
+
+
+
+
+
+    function welcome() {
+        setTimeout(()=>{
+            document.getElementById('welcome-card').style.cssText = ';opacity:1;margin-top:100px'
+            },1000)
+            
+            setTimeout(()=>{
+                document.getElementById('welcome-card').style.cssText = 'opacity:0;margin-top:90px;'
+                setTimeout(()=>{
+                    document.getElementById('welcome-card').style.cssText = 'display:none;'
+                    },500)
+                },8500)
+            
+    }
+    
+
+
