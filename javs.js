@@ -7,7 +7,6 @@ let theme =  [{clearSkyDay:'clear-sky-day.jpg',clearSkyNight:'clear-sky-night.jp
 let imperial = false
 
 let clickables = [{googlefrog:null,googleCalendar:null,landscape:true,ambiant1:null,ambiant2:null,ambiant3:null},{font1:true,font2:null,font3:null},{clockMode:false},{fsToggle:null,stt:false}]
-
 if (localStorage.length>0) {
     clickables = JSON.parse(localStorage.getItem('locals'))
 }else{
@@ -1024,9 +1023,13 @@ opacity: .6;`
 
     function welcome() {
         setTimeout(()=>{
-            document.getElementById('welcome-card').style.cssText = ';opacity:1;margin-top:100px'
+             setTimeout(()=>{document.getElementById('welcome-card').style.cssText = 'display:block'},500)
+            document.getElementById('welcome-card').style.cssText = 'opacity:1;margin-top:100px'
             },1000)
             
+
+
+
             setTimeout(()=>{
                 document.getElementById('welcome-card').style.cssText = 'opacity:0;margin-top:90px;'
                 setTimeout(()=>{
