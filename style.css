@@ -4,7 +4,12 @@
     
     
 }
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface:regular);
+@font-face {
+    font-family:abril fatface;
+    src: url('https://fonts.googleapis.com/css?family=Abril+Fatface:regular');
+}
+
+
 *{
     padding: 0;
     margin: 0;
