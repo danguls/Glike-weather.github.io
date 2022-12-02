@@ -567,7 +567,7 @@ function changeFont() {
                     document.getElementById('temp').style.paddingBottom  = ' 15px'
             break;
         case clickables[1].font2 === true:
-            infoBar.style.fontFamily = 'abril fatface'
+            infoBar.style.fontFamily = 'Abril Fatface'
             document.getElementById('weather-icon').style.paddingBottom  = ' 10px'
             document.getElementById('temp').style.paddingBottom  = ' 10px'
             break;

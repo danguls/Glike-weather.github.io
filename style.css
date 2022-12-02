@@ -4,11 +4,6 @@
     
     
 }
-@font-face {
-    font-family:abril fatface;
-    src: url('https://fonts.googleapis.com/css?family=Abril+Fatface:regular');
-}
-
 
 *{
     padding: 0;
@@ -374,8 +369,6 @@ z-index: 200;
     transition: all .4s;
     opacity: 0;
     display: none;
-
-    
     
 
 
