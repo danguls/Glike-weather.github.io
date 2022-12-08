@@ -549,7 +549,8 @@ function tempThemeDis(mainThemeDir,mainThemeImage) {
     mainWindow.style.background = `url(images/${mainThemeDir}/${mainThemeImage})`
     mainWindow.style.backgroundSize= 'cover'
     mainWindow.style.backgroundRepeat= 'no-repeat'
-    
+    mainWindow.style.backgroundPosition = 'center center'
+
 }
 
 
