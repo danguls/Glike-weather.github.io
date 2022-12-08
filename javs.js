@@ -9,6 +9,7 @@ let imperial = false
 let clickables = [{googlefrog:null,googleCalendar:null,landscape:true,ambiant1:null,ambiant2:null,ambiant3:null},{font1:true,font2:null,font3:null},{clockMode:false},{fsToggle:null,stt:false}]
 if (localStorage.length>0) {
     clickables = JSON.parse(localStorage.getItem('locals'))
+    clickables[3].stt = false;
 }else{
  welcome()
 }
