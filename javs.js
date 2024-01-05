@@ -281,7 +281,7 @@ function changeTheme(){
                                                     case weather.icon ==="10d":
                                                         //rain day
                                                         setTmpImg('google-frog',theme[0].rainDay)
-                                                            setTimeout(tempThemeDis, 4000,'google-frog',theme[0].rainDAy)
+                                                            setTimeout(tempThemeDis, 4000,'google-frog',theme[0].rainDay)
                                                         break;
                                                         case weather.icon ==="10n":
                                                             //rain
