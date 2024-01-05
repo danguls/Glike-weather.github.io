@@ -192,7 +192,7 @@ tempEl.innerHTML = weather.tempreture + '<span>°</span>'
 
 function setIcon(){
     weatherIcon.src = `icons/${weather.icon}.png`
-    printf(`this is the weather ${weatherIcon.src}`);
+   
     
 }
 
