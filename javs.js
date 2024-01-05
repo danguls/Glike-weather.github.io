@@ -192,6 +192,7 @@ tempEl.innerHTML = weather.tempreture + '<span>°</span>'
 
 function setIcon(){
     weatherIcon.src = `${weather.icon}.png`
+    console.log(`${weather.icon}`)
    
     
 }
